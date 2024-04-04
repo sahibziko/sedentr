@@ -1,25 +1,23 @@
 # Seden UserBot <sub><sup><sub>_Feel my hands in your hair_</sup></sub></sub>
-### Telegram Python Bot running on Python3 with a Postgresql Sqlalchemy database. It is an modular and simple to use bot.
+### Telegram Python Bot running on Python3 with a Postgresql Sqlalchemy database. It is a modular and easy-to-use bot.
 
 ![GitHub](https://img.shields.io/github/license/TeamDerUntergang/Telegram-SedenUserBot?color=red)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 ## Disclaimer
-<details>
-  <summary>Click to expand!</summary>
+```python
+# -*- coding: utf-8 -*-
+"""
+DISCLAIMER: 
+The use of this Telegram bot is subject to the following terms:
 
-```c
-#include <std/disclaimer.h>
-/**
-    Your Telegram account may be banned.
-    I'm not responsible for misuse of bot, responsibility belongs entirely to user.
-    This bot is maintained for fun as well as managing groups efficiently.
-    If you think you will have fun by spamming groups, you are wrong.
-    In case of any spam ban, if you come and write that my account has been banned,
-    I'll just laugh at you.
-/**
+- Your Telegram account may be banned due to misuse of the bot.
+- The responsibility for any misuse of the bot lies entirely with the user.
+- This bot is primarily maintained for facilitating efficient group management and for entertainment purposes.
+- Engaging in spam activities within groups is strongly discouraged.
+- If your account is banned due to spamming, any requests for assistance will not be entertained.
+"""
 ```
-</details>
 
 ## Run Bot
 <details>
@@ -30,32 +28,41 @@
 git clone https://github.com/TeamDerUntergang/Telegram-SedenUserBot.git
 cd Telegram-SedenUserBot
 
-# Install pip dependencies
-pip3 install -r requirements.txt
+# Create and activate a virtual environment (you can change 'sedenify-venv' to your preferred name)
+python3 -m venv sedenify-venv
+source sedenify-venv/bin/activate
 
-# Generate session from session.py (skip if there is already)
+# Install Python dependencies
+pip install -r requirements.txt
+
+# Generate a session file if it doesn't exist
 python3 session.py
 
-# Create config.env and fill variables
-mv sample_config.env config.env
+# Create a configuration file and fill in the required variables
+cp sample_config.env config.env
+# Then fill in the necessary variables in config.env
 
 # Run bot
 python3 seden.py
+
 ```
 ### Nix/NixOS
-Just type `nix-shell` command in bot folder.
+To set up the bot in a Nix/NixOS environment, navigate to the bot folder and execute the `nix-shell` command.
 </details>
 
 ## Q&A
-If you have any requests & complaints & suggestions, you can join our [support group](https://t.me/SedenUserBotSupport) or please contact us through a [GitHub issue](https://github.com/TeamDerUntergang/Telegram-SedenUserBot/issues).
+If you have any requests, complaints, or suggestions, please feel free to reach out to us.
 
-Please go to our [GitHub.io](https://teamderuntergang.github.io/installation.html) page for installation instructions! Questions asked without reading the instruction will not be answered.
+- Join our [support group](https://t.me/SedenUserBotSupport) for assistance.
+- Submit a [GitHub issue](https://github.com/TeamDerUntergang/Telegram-SedenUserBot/issues) to report any problems or provide feedback.
+
+For installation instructions, please visit our [GitHub.io](https://teamderuntergang.github.io/installation.html) page. We kindly request that you read the instructions carefully before asking questions, as questions that can be answered by following the instructions may not receive a response.
 
 ## Credits
 <details>
   <summary>Click to expand!</summary>
 
-*   [@NaytSeyd](https://github.com/NaytSeyd) - Founder
+*   [@naytseyd](https://github.com/naytseyd) - Founder
 *   [@frknkrc44](https://github.com/frknkrc44) - Operator
 *   [@Sedenogen](https://github.com/ciyanogen) - Co-Founder
 *   [@Delivrance](https://github.com/pyrogram/pyrogram) - Pyrogram Library
@@ -65,4 +72,4 @@ Please go to our [GitHub.io](https://teamderuntergang.github.io/installation.htm
 </details>
 
 ## License
-This project is licensed under the [AGPL-3](https://www.gnu.org/licenses/agpl-3.0.html).
+This project is licensed under the [GNU Affero General Public License v3.0](https://www.gnu.org/licenses/agpl-3.0.html).
